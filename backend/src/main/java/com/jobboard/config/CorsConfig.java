@@ -7,13 +7,19 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import java.util.Arrays;
+
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
     
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOriginPattern("*");
+        config.setAllowedOriginPatterns(Arrays.asList(
+            "http://localhost:*",
+            "https://*.vercel.app",
+            "https://frontend-xi-ten-54.vercel.app"
+        ));
         config.addAllowedMethod("*");
         config.addAllowedHeader("*");
         config.setAllowCredentials(true);
