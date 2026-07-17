@@ -25,3 +25,6 @@ Thumbs.db
 # Java
 *.class
 *.jar
+
+# Vercel temp
+.vercel-tmp/
