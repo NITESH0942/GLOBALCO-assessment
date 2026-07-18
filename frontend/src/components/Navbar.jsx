@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Navbar.css';
+import { TfiLinkedin } from "react-icons/tfi";
 
 function Navbar() {
   const { user, isAuthenticated, logout } = useAuth();
@@ -13,8 +14,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span className="logo-icon">💼</span>
-          <span className="logo-text">JobBoard</span>
+          <span className="logo-icon"><TfiLinkedin /></span>
+          <span className="logo-text">LinkIn</span>
         </Link>
         
         {/* Desktop links */}
