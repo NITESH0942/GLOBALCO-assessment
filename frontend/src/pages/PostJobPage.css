@@ -214,6 +214,10 @@
     padding: 0 var(--spacing-md);
   }
   
+  .post-container h1 {
+    font-size: var(--font-size-xl);
+  }
+  
   .post-job-form {
     padding: var(--spacing-lg);
   }
@@ -221,5 +225,25 @@
   .form-row,
   .form-row-3 {
     grid-template-columns: 1fr;
+  }
+  
+  .requirement-row {
+    flex-wrap: wrap;
+  }
+  
+  .remove-requirement {
+    width: 100%;
+    height: auto;
+    padding: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .post-job-form {
+    padding: var(--spacing-md);
+  }
+  
+  .submit-button {
+    font-size: var(--font-size-base);
   }
 }

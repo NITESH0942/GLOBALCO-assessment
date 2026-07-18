@@ -301,6 +301,10 @@
     padding: var(--spacing-lg);
   }
   
+  .apply-header h1 {
+    font-size: var(--font-size-xl);
+  }
+  
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -314,5 +318,15 @@
   .browse-more {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-content {
+    padding: var(--spacing-md);
+  }
+  
+  .submit-button {
+    font-size: var(--font-size-base);
   }
 }

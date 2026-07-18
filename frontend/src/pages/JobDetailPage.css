@@ -287,6 +287,7 @@
   .job-detail-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--spacing-md);
   }
   
   .job-company-avatar-large {
@@ -299,8 +300,23 @@
     font-size: var(--font-size-xl);
   }
   
+  .job-detail-company {
+    font-size: var(--font-size-base);
+  }
+  
   .job-detail-meta {
     flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .job-detail-tags .tag {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+  
+  .job-detail-salary {
+    flex-direction: column;
+    align-items: flex-start;
     gap: var(--spacing-xs);
   }
   
@@ -314,5 +330,9 @@
   
   .job-detail-page {
     padding-bottom: 80px;
+  }
+  
+  .requirements-list li {
+    padding-left: var(--spacing-lg);
   }
 }
