@@ -1,4 +1,5 @@
 import './Footer.css';
+import { TfiLinkedin } from "react-icons/tfi";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,7 +9,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <span className="footer-logo">💼 JobBoard</span>
+            <span className="footer-logo"><TfiLinkedin />LinkIn</span>
             <p className="footer-tagline">Find your dream job or hire top talent</p>
           </div>
           <div className="footer-links">

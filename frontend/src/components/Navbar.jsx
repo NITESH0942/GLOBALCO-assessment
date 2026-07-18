@@ -10,8 +10,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Link</span>
           <span className="logo-icon"><TfiLinkedin /></span>
+          <span className="logo-text">LinkIn</span>
         </Link>
         <div className="navbar-links">
           <Link to="/" className="nav-link">Browse Jobs</Link>
