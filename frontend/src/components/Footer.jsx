@@ -9,7 +9,11 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <span className="footer-logo"><TfiLinkedin />LinkIn</span>
+            <span className="footer-logo">
+              <TfiLinkedin />
+              
+              <span className="logo-text">LinkIn</span>
+            </span>
             <p className="footer-tagline">Find your dream job or hire top talent</p>
           </div>
           <div className="footer-links">
@@ -26,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} JobBoard. All rights reserved.</p>
+          <p>&copy; {currentYear} LinkIn. All rights reserved.</p>
         </div>
       </div>
     </footer>
